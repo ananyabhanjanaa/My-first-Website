@@ -1,0 +1,41 @@
+div.parent{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.first{
+    background-color: red;
+}
+.list{
+    grid-column: ;
+    float: left;
+}
+.what{
+    background-color: aqua;
+    width: 200px;
+    float: left;
+}
+.hello{
+    background-color: aqua;
+    width: 200px;
+}
+.where{
+    background-color: aqua;
+    width: 200px;
+}
+.price{
+    background-color: aqua;
+    width: 200px;
+}
+.name{
+    background-color: aqua;
+    width: 200px;
+}
+.hey{
+    background-color: aqua;
+    width: 200px;
+}
+.nam{
+    background-color: aqua;
+    width: 200px;
+}

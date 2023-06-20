@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>payment form</title>
+</head>
+<body>
+    <form action="">
+    <!--action me hum server ki loaction daalte hai, lekin abhi koi loaction daalne ke luye nahii hai , isliye islo khaalo leave kar dege abhi ke  liye-->
+    <h1>
+        Payment Form
+    </h1>
+    <h2> Contact Information</h2>
+    <p>
+        REQUIRED FIELLD ARE FOLLOWED BY A STAR
+    </p>
+    <p>Name =* <input type="text" name="Name" required></p>
+    <!--required attibute is used so that he user has to fill the name column, he cant submit whithot it bcz it is compulory/required-->
+    <!--star(*) lagane se hum user ko condtion bata rhe hai star wali which is ki required fields are followed by a star-->
+    <fieldset>
+    <legend> CHOSE YOUR GENDER</legend>
+    <p>Male <input type="radio" name="gender" id="male"></p>
+    <p>Female <input type="radio" name="gender" id="female"></p>
+    </fieldset>
+    <!--The <fieldset> is used for grouping all the controls of the form together to give it a structured look. It adds a border around the form to give it a differentiated look from all the other parts of the web page. We can also use the <legend> tag to give a caption to the form which is included inside the <fieldset>.-->
+        <br><br>
+    <fieldset>
+        <p>
+            ADDRESS= *<textarea name="address" id="address" cols="1000" rows="10"></textarea>
+        </p>
+    </fieldset>
+    <p>
+        email:* <input type="email" name="email" id="email">
+    </p>
+    <p>
+        pincode= <input type="number" name="pin" id=""pin>
+    </p>
+
+    <h2>
+        Payment Information
+    </h2>
+    <p>
+        card type= 
+        <select name="cardtype" id="cardtype">
+        <option value="">select a card type</option>
+        <option value="visa" ></option>
+        <option value="rupay"></option>
+        <option value="mastercard"></option>
+        <option value="debit"></option>
+    </select>
+    </p>
+     <!--agar hum option value ko empty nahi rakhte to fir ye value seedha peeche server me chali jaati and jo bhi user khud option select kar ke submit karta  vo na save hoti, uski jagah ye wali value chali jaati,isliye humne isko empty chod dia hai -->
+
+             <!--all these options jinke andar we have put some alue will appear in the dropdoen list out of which the customer can choose some value-->
+    <p>
+        card number <input type="number" name="cardnumber" id="cardnumber">
+        </p>
+        <p>
+            expiration date <input type="date" name="ed" id="ed">
+        </p>
+        <p>
+            time <input type="time" name="ed" id="ed">
+        </p>
+        <p>
+            cvv =*<input type="password" name="pw" id="pww">
+        </p>
+        <input type="submit" value="paynow">
+    </form>
+</body>
+</html>

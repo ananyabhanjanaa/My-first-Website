@@ -1,0 +1,7 @@
+h2{
+    color: palevioletred;
+}
+
+span.special,li.special{
+    color: purple;font-family: 'Times New Roman', Times, serif;
+}
