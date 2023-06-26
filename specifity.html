@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPECIFITY AND INHERITANCE</title>
+</head>
+<body>
+    <!--css properties ki priority kyaa hai:
+    1.position
+    2.specificity
+    3.type
+    4.importance
+-->
+<!--POSITION: jo css property sabse neeche hogi uski priority upar wale se zyada hogi
+in the following example, list ka color will be yellow not brown or aqua bcz yellow sabse neeche hai, aur isi ko hum CASCADING bhi kehte hai-->
+
+*also we can add mlitiple classes to our html elements, so if there are 2 classes then neeche wali class ki css prop lagegi bcz of position priority
+<li>
+    <li 
+    style="color: aqua;
+    color: brown;
+    color: yellow;">
+    ananya
+</li>
+</li>
+<!--SPECIFICITY: In this, the following is the priority order of SELECTORS:
+        1.ID SELECTOR           Eg: #first-id{color:green;}
+        2.ATTRIBUTE SELECTOR    Eg: li[draggable] {color:pink;}
+        3.CLASS SELECTOR        Eg: .first-class{olor:red;}
+        4.ELEMENT SELECTOR      Eg: li{color:blue;}
+
+        In sab me sabse zyada priority id selector ki hai and least mein element selsctor ki hogi even if the css prop are same and apply to the same element in the body, so the list will be green
+    -->
+
+<!--TYPE: there are 3 types of css linking : in line, internal and external
+        the priority is:
+        1.IN LINE CSS
+        2.INTERNAL CSS
+        3.EXTERNAL CSS
+
+        Ex:
+        <style>
+            li{
+                color:blue;
+            }
+        </style>
+
+        <li style='color:purple;'>ananya</li?
+
+        SO PURPLE WILL BE APPLIED TO THE LIST,NOT BLUE BCZ INLINE>>INTERNAL>>EXTERNAL CSS
+     -->
+
+     <!--IMPORTANCE:
+        If we put a keyword (!important) in our css prop then irrespective of all the above rules, vahi wala chalega
+        Example;
+        color: green;
+        color:red !important;
+        so color will be red only !!
+        -->
+</body>
+</html>

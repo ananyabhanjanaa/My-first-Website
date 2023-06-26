@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning About Grids</title>
+    <style>
+        /*if number of divisions is more and the number of rows and colums defined in the grid are less then the extra divs will  will be displayed below the already made grid and the extra divs will be of size of the conent not of the size of the rows/columns defined under the grid but if we use GRRID-AUTO-ROWS:300px suppose then the all new/extra rows will be of this size 300px onwards*/
+        .blue-container{
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            grid-template-rows: 1fr 1fr;
+            row-gap: 2px;
+            column-gap: 5px;
+        }
+        p{
+            background-color: lightseagreen;
+        }
+        .purple-dabba{
+            display: grid;
+            grid-template-rows:100px 200px ;
+            grid-template-columns: 400px 800px;
+            /*aliter-->grid-template:100 px 200px / 400px 800px
+            when we are going to use pixel size in grid template then page wont be responsive bcx px size wont change */
+        }
+        .purple-item{
+            background-color:blueviolet;
+            border: 2px solid orange;
+        }
+        .green-item{
+            background-color:lightgreen;
+            border: 3px solid indianred;
+        }
+        .green-dabba{
+            display:grid ;
+            grid-template-rows:100px auto ;
+            grid-template-columns:200px auto ;
+            /*using auto keyword makes the grid a bit responsve: when we use auto for columns, then the column will take upto 100% space(width)of the broswer till the end
+            but if we use auto in rows,then only as much space is taken as of the content inside it*/
+        }
+        .orane-item{
+            background-color: orange;
+            border: 2px solid lime;
+        }
+        .orange-box{
+            display: grid;
+            grid-template-rows: 100px 200px;
+            grid-template-columns: 200px minmax(400px,800px);
+            /*using minmax property we define what is our minimum size and maximum size for the columns as it only works for colums not for grids making the site responsive for the coulmns*/
+        }
+        .red-item{
+            background-color: red;
+            border: 2px solid cornflowerblue;
+        }
+        .red-dabba{
+            display: grid;
+            grid-template-rows: repeat(2,200px);
+            grid-template-columns:repeat(2,130px) ;
+        }
+    </style>
+</head>
+<body>
+    <h3>USING REPEAT FUNCTION</h3>
+    <div class="red-dabba">
+        <div class="red-item"></div>
+        <div class="red-item"></div>
+        <div class="red-item"></div>
+        <div class="red-item"></div>
+    </div>
+    <h3>MINMAX GRID</h3>
+    <div class="orange-box">
+        <div class="orane-item"></div>
+        <div class="orane-item"></div>
+        <div class="orane-item"></div>
+        <div class="orane-item"></div>
+    </div>
+
+    <h3>AUTO GRID</h3>
+    <div class="green-dabba">
+        <div class="green-item">first row first column</div>
+        <div class="green-item">first row second column</div>
+        <div class="green-item">second row first column</div>
+        <div class="green-item">second row second column</div>
+    </div>
+<br>
+<h3>SIZE IN PIXELS GRID</h3>
+    <div class="purple-dabba">
+        <div class="purple-item">100*400px<br>first row first column</div>
+        <div class="purple-item">100*800px<br>first row second column</div>
+        <div class="purple-item">200*400px<br>second row first column</div>
+        <div class="purple-item">200*800px<br>second row second column</div>
+    </div>
+    <h3>FRACTIONAL GRID</h3>
+    <div class="blue-container">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa veniam deleniti ratione numquam praesentium eligendi?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa veniam deleniti ratione numquam praesentium eligendi?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa veniam deleniti ratione numquam praesentium eligendi?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa veniam deleniti ratione numquam praesentium eligendi?</p>
+    </div>
+</body>
+</html>

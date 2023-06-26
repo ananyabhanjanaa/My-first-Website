@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FLEX PROPERTIES</title>
+    <style>
+        .conatiner{
+            background-color: yellowgreen;
+            display: flex;
+            flex-direction: row;
+            
+            justify-content: space-around;
+        }
+        .cont{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            row-gap: 30px;
+            
+        }
+        .color{ width: 120px;height: 100px;padding: 3px;}
+        #red{background-color: red;
+            
+           
+        }
+        
+        #violet{background-color: violet;
+        }
+        #indigo{
+            background-color: indigo;
+        }
+        #blue{
+            background-color: blue;
+        }
+        #green{
+            background-color: green;
+        }
+        #yellow{
+            background-color: yellow;
+        }
+        #orange{
+            background-color: orange;
+        }
+
+    </style>
+<body>
+<!--justify content works along the main axis and align items works aong the cross axis
+    justify content  and align items both work on the flex-xontainer while align-self works individually on the flex-item(child element
+    align self only works for wrap and doesn't work for nowrap-->
+
+    <!--The parent container is called FLEX-CONTAINER 
+        the items(children elements inside conatiner) are called FLEX-ITEMS-->
+
+        <!--Properties of Parent(Flex-Container):
+            1.display
+                display:flex; //or inline-flex
+            2.flex-direction:
+                flex-direction: row | row-reverse | column | column-reverse;
+            3.flex-wrap:
+                flex-wrap: nowrap | wrap | wrap-reverse;
+                nowrap:all items in a single line
+                wrap:all items in multiple lines from top to bottom
+                wrap-reverse:all items in multiple lines from bottom to top
+            4.justify-content
+                justify-content: flex-start | flex-end | center | space-between | space-around | space-evenly | start | end | left | right ... + safe | unsafe;
+            5.align-items
+                align-items: stretch | flex-start | flex-end | center | baseline | first baseline | last baseline | start | end | self-start | self-end + ... safe | unsafe;
+            6.align-content:
+                align-content: flex-start | flex-end | center | space-between | space-around | space-evenly | stretch | start | end | baseline | first baseline | last baseline + ... safe | unsafe;
+            7.gap property:
+                gap: 10px;
+                gap: 10px 20px; /* row-gap column gap */
+                row-gap: 10px;
+                column-gap: 20px;
+}
+    -->
+    <!--    properties of flex-items:   
+            refer o this page:
+            -->
+    <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/">FLEX PROPERTIES</a>
+    <div class="conatiner">
+        <div>menu</div>
+        <div>contact</div>
+        <div>home</div>
+        <div>exit</div>
+    </div>
+    <br><br><br>
+    <div class="cont">
+        <div class="color" id="violet">violet</div>
+        <div class="color" id="indigo">indigo</div>
+        <div class="color" id="blue">blue</div>
+        <div class="color" id="green">green</div>
+        <div class="color" id="yellow">yellow</div>
+        <div class="color" id="orange">orange</div>
+        <div class="color" id="red">red</div>
+        <div class="color" id="green">green</div>
+        <div class="color" id="yellow">yellow</div>
+        <div class="color" id="orange">orange</div>
+        <div class="color" id="red">red</div>
+    </div>
+</body>
+</html>

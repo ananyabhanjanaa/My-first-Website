@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RESPONSIVENESS IN A PAGE</title>
+    <style>
+       @media(max-width:600px){
+        body{
+            background-color: blueviolet;
+        }
+       }
+       
+       @media(min-width:600px)and (max-width:900px){
+        body{
+            background-color:orange;
+        }
+       }
+       @media(min-width:900px)and (max-width:1200px){
+        body{
+            background-color:orangered;
+        }
+       }
+       @media(min-width:1200px)and (max-width:5000px){
+        body{
+            background-color:olivedrab;
+        }
+       }
+    </style>
+</head>
+<body>
+    <!--There are 4 ways by which we can make our page responsive:
+        1.Media Queries
+        2.CSS Grid
+        3.CSS Flexbox
+        4.Bootstrap or external frameworks-->
+        
+        <h1>USING MEDIA QUERIES:</h1>
+        <pre style="font-size: x-large;">
+            // Little larger screen
+@media only screen and (min-width: 480px) {
+
+}
+
+// Pads and larger phones
+@media only screen and (min-width: 600px) {
+
+}
+
+// Larger pads
+@media only screen and (min-width: 768px) {
+
+}
+
+// Horizontal pads and laptops
+@media only screen and (min-width: 992px) {
+
+}
+
+    // Really large screens
+@media only screen and (min-width: 1382px) {
+
+
+}
+
+// 2X size (iPhone 4 etc)
+@media only screen and 
+        (-webkit-min-device-pixel-ratio: 1.5), only screen and 
+        (-o-min-device-pixel-ratio: 3/2), only screen and 
+        (min-device-pixel-ratio: 1.5) {
+
+}
+        </pre>
+</body>
+</html>

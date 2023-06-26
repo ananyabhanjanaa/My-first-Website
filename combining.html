@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COMBINING CSS SELESCTORS</title>
+    <style>
+        /*1.GROUPING:We can add multiple selectors together with help of a comma and a space*/
+h1,h3{
+    color: blueviolet;
+}
+
+/*2.parent selector > child selector: puts css prop on the child element of the parent element(only works for parent and child not for granchildren or great grandchildren)*/
+.box>.para{
+    color: brown;
+}
+
+/*3.ancestor selector space descendent selector : to select any descendent of the ancestor: could be grandchildren, children or great grand children*/
+.box .list-items{
+    color: aquamarine;
+}
+
+/*4.CHAINING:selectorselector (without spaces) Apply only where all the  selectors are true, used for specific selectors--->always put element first then class and then id
+    only puts css prop on element jab uski saare selectors true hai means same class,id,element otherwise agar ek bhi selector different hai then doesnt put*/
+li.list-2{
+    color: palevioletred;
+}
+
+    </style>
+</head>
+<body>
+    <h1 class="boxy">HOW TO USE MliTIPLE CSS SELECTORS OR COMBINE THEM</h1>
+    <HR>
+    <div class="box">
+        <h3 class="list">to do list</h3>
+        <p class="para">monday
+        <ol class="list-items">
+            <li class="list-1">
+                css
+            </li>
+            <li class="list-2">
+                html
+            </li>
+                <li class="list-3">
+                    javascript
+                </li>
+        </ol>
+    </p>
+    <p class="para">other work also</p>
+</div>
+</body>
+</html>

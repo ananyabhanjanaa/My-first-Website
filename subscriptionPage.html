@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <title>Subscription Page</title>
+    <style>
+        .cont{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+        }
+.material-symbols-outlined{
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
+#a{
+    background-color: #E75480;
+    border-radius: 50px;
+    color: white;
+}
+#b{
+    background-color: darkblue;
+    border-radius: 50px;
+    color: white;
+}
+#c{
+    background-color: lightblue;
+    border-radius: 50px;
+    color: white;
+}
+
+        body{
+            background-color: whitesmoke;
+            margin-top: 1.5cm;
+        }
+        .flex-item{
+            width: 600px;
+            
+        }
+        #pink{
+            background-image: linear-gradient(to right, rgb(255, 255, 154) 5% , #E75480 95%);
+            background-repeat: no-repeat;
+            width: 600px;
+            float: left;
+            border-top-left-radius: 50px;
+            border-top-right-radius: 50px;
+        }
+        #blue{
+            background-image: linear-gradient(to right, lightblue 5% , darkblue 95%);
+            background-repeat: no-repeat;
+            width: 600px;
+            float: left;
+            border-top-left-radius: 50px;
+            border-top-right-radius: 50px;
+        }
+        #light{
+            background-image: linear-gradient(to right, rgb(38, 213, 166) 5% , lightblue 95%);
+            background-repeat: no-repeat;
+            width: 600px;
+            float: left;
+            border-top-left-radius: 50px;
+            border-top-right-radius: 50px;
+        }
+        h1{
+            font-size:60px;
+            color: white;
+            font-weight: bold;
+            text-align: center;
+            text-decoration: solid;
+            padding-top: 30px;
+        }
+        hr.firsthr{
+            
+            color: white;
+            border-bottom: 4px solid white;
+            width:70%;
+            
+        }
+       .white{
+        background-color: white;
+       }
+        .pp{
+            color: white;
+            font-size: x-large;
+            padding-bottom: 40px;
+            text-align: center;
+            padding-right: 100px;
+            padding-left:100px ;
+            
+        }
+        .price{
+            text-align: center;
+            
+        }
+       .cc{
+        height: 440px;
+       }
+       hr.secondhr{
+            color: gainsboro;
+            border-bottom: 4px solid gainsboro;
+            width:20%;
+            position: relative;
+            bottom: 100px;
+        }
+        ul{
+            color:black;
+            font-size: x-large;
+            padding-bottom: 40px;
+            text-align: center;
+            list-style: none;
+            text-align: justify;
+            padding-right: 30px;
+            position: relative;
+            bottom: 50px;
+        
+        }
+        .btn{
+            background-repeat: no-repeat;
+            text-align: center;
+            text-shadow:1cm solid black;
+            text-decoration:solid;
+            font-weight:bolder;
+            border: 1px ;
+            letter-spacing: 2px;
+            font-size: x-large;
+            width: 250px;
+            height: 50px;
+            border-radius: 50px;
+            color: white;
+            margin-bottom: 1cm;
+            position: relative;
+            bottom: 50px;
+            border-bottom-left-radius: 100px;
+            border-top-right-radius: 100px;
+        }
+    
+        
+        #btn1{
+            background-image: linear-gradient(to right, rgb(255, 255, 154) 5% , #E75480 95%);
+        }
+        #btn2{
+            background-image:linear-gradient(to right, lightblue 5% , darkblue 95%) ;
+        }
+        #btn3{
+            background-image:linear-gradient(to right, rgb(38, 213, 166) 5% , lightblue 95%); ;
+        }
+        p.cc{
+            font-size: 120px;
+            font-weight: 900;
+        }
+        sub{
+            font-size: 45px;
+        }
+        sup{
+            font-size: 90px;
+        }
+    
+    </style>
+</head>
+<body>
+    <div class="cont">
+
+        <div id="basic" class="flex-item">
+            <div id="pink" class="colored">
+                <h1>BASIC</h1>
+                <hr class="firsthr">
+                <p class="pp">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis, eum! Incidunt facere </p>
+                
+            </div>
+            <div id="20" class="white"> 
+                <div class="price">
+                <p class="cc"><sup>$</sup>20<sub>/mo</sub></p>
+                <hr class="secondhr">
+            </div>
+                <div class="list-items">
+                    
+                    <ul>
+                        <li>
+                            <p>
+                                <i id="a" class="material-symbols-outlined">Check_Circle</i>&nbsp;Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi adipisci quo quae qui!
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <i id="a" style class="material-symbols-outlined">Check_Circle</i>&nbsp;Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi adipisci quo quae qui!
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <i id="a" style class="material-symbols-outlined">Check_Circle</i>&nbsp;Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi adipisci quo quae qui!
+                            </p>
+                        </li>
+                    </ul>
+                    <center>
+                    <button class="btn" id="btn1" >BUY NOW</button>
+                    </center>
+                </div>
+        </div></div>
+
+
+            <div id="standard" class="flex-item">
+                <div id="blue" class="colored">
+                    <h1>STANDARD</h1>
+                    <hr class="firsthr">
+                    <p class="pp">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis, eum! Incidunt facere </p>
+                    
+                </div>
+                <div id="35" class="white"> 
+                    <div class="price">
+                    <p class="cc"><sup>$</sup>35<sub>/mo</sub></p>
+                    <hr class="secondhr">
+                </div>
+                    <div class="list-items">
+                        
+                        <ul>
+                            <li>
+                                <p>
+                                    <i id="b" style class="material-symbols-outlined">Check_Circle</i>&nbsp;Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi adipisci quo quae qui!
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <i id="b" style class="material-symbols-outlined">Check_Circle</i>&nbsp;Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi adipisci quo quae qui!
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <i id="b" style class="material-symbols-outlined">Check_Circle</i>&nbsp;Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi adipisci quo quae qui!
+                                </p>
+                            </li>
+                        </ul>
+                        <center>
+                        <button class="btn" id="btn2" >BUY NOW</button>
+                        </center>
+                    </div>
+            </div>
+        </div>
+        
+            <div id="pre" class="flex-item">
+                <div id="light" class="colored">
+                    <h1>PREMIUM</h1>
+                    <hr class="firsthr">
+                    <p class="pp">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis, eum! Incidunt facere </p>
+                    
+                </div>
+                <div id="50" class="white"> 
+                    <div class="price">
+                    <p class="cc"><sup>$</sup>50<sub>/mo</sub></p>
+                    <hr class="secondhr">
+                </div>
+                    <div class="list-items">
+                        
+                        <ul>
+                            <li>
+                                <p>
+                                    <i id="c" class="material-symbols-outlined">Check_Circle</i>&nbsp;Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi adipisci quo quae qui!
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <i id="c" style class="material-symbols-outlined">Check_Circle</i>&nbsp;Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi adipisci quo quae qui!
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <i id="c" style class="material-symbols-outlined">Check_Circle</i>&nbsp;Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi adipisci quo quae qui!
+                                </p>
+                            </li>
+                        </ul>
+                        <center>
+                        <button class="btn" id="btn3" >BUY NOW</button>
+                    </center>
+                    </div>
+                </div>
+            </div>
+    </div>
+</body>
+</html>

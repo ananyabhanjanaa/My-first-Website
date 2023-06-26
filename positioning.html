@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS POSITIONING</title>
+    <style>
+        .aa{
+            position: static;
+            width: 300px;
+            height: 300px;
+            background-color: aqua;
+            text-align: center;
+            font-size: 1cm;
+        }
+        .bb{
+            position: relative;
+            top: 30px;
+            left: 40px;
+            width: 300px;
+            height: 300px;
+            background-color:palevioletred;
+            text-align: center;
+            font-size: 1cm;
+        }
+        .abs{
+            position: absolute;
+            top: 30px;
+            left: 40px;
+            width: 300px;
+            height: 300px;
+            background-color:goldenrod;
+            text-align: center;
+            font-size: 1cm;
+            z-index: -1;
+        }
+        .ccc{
+            position: fixed;
+            top: 100px;
+            left: 500px;
+            width: 300px;
+            height: 300px;
+            background-color:slategrey;
+            text-align: center;
+            font-size: 1cm;
+        }
+    </style>
+</head>
+<body>
+    <!--THERE ARE 4 TYPES OF POSITIONS IN CSS:
+        1.STATIC    2.RELATIVE    3.ABSOLUTE   4.FIXED-->
+
+        <div class="aa">STATIC POSITION</div>
+        <!--aa class div is at static position which means it is at its defalit position which is given to it by html and there are no changes in it-->
+
+        <div class="bb">RELATIVE POSITION</div>
+        <!--bb class div is at relative position means the position relative to its defalit/orignal(static) postion. We has written left :40px and top:30px in its css which means left se 40px push kar dia toh vo thoda right me chala jaayga and top se 30px neeche push kar diya toh vo thoda bottom mein ho gaya with respect to its defalit position-->
+
+        <DIV class="rel">
+        <div class="abs">ABSOLUTE POSITION</div>
+    </DIV>
+    <!--Absolute position means the position relative to the nearest positioned ancestor or the top left corner of the webpage:
+    Means ki jaise abs wali class ka div hai it will be relative to its parent element ( ancestor element) ki position to whatever dimentions we have given, otherwise if ancestor element does not exist then it will go to the top left corner of the page on its own, nahi toh top left corner wali position ke relative it will go around :)
+    -->
+
+    <!--Z INDEX~
+         z-index property specifies the stack order of an element.
+         MATLAB Z-AXIS KE RESPECT MEIN: doosre element ke neeche aayga ya upar aayga apna element. if z index is higher than other toh higher wala lower wale ke upar aayga
+
+         if we change z index to -1 then vo neeche hiide ho jaayga and if it goes to  0 then by defalit upar aa jayga.... here it hides behind static box bcz z index is -1, if we remove it or do it to 0 then it will go on top of the static wala dabba.
+
+An element with greater stack order is always in front of an element with a lower stack order.
+
+Note: z-index only works on positioned elements (position: absolute, position: relative, position: fixed, or position: sticky) and flex items (elements that are direct children of display:flex elements).
+
+Note: If two positioned elements overlap without a z-index specified, the element positioned last in the HTML code will be shown on top. -->
+<!--
+    1.AUTO=	Sets the stack order equal to its parents. This is defalit	
+    2.NUMBER= Sets the stack order of the element. Negative numbers are allowed	
+    3.INITIAL= Sets this property to its defalit value. Read about initial	
+    4.INHERIT= Inherits this property from its parent element.
+-->
+<div class="ccc">
+    FIXED POSITION
+</div>
+    <!--POSITION relative to the top left corner of the BROWSER WINDOW-
+        matlab agar hum window ko upar ya neeche bhi scroll karege fir bhi vo element vahi ke vahi hi fixed rahega top left corner me-->
+
+</body>
+</html>
